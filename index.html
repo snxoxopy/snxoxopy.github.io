@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, see you soon:)</title>
+    
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #282c5e;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 150px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+
+        .zinee {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQUW4PUbq8MfU2hHvRD20QaOqjhCGWI4hF3Q&usqp=CAU');
+            background-size: cover;
+            background-position: center;
+            margin: 70px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .msgbox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 16px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            background-color: ivory;
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function go_zinee() {
+            alert('WELCOME to MY GITHUB');
+            window.location.href='https://github.com/suzinee';
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class='letter-close'>
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">Hello, this is Noopy</h2>
+    </div>
+
+    <div class='letter-open'>
+        <div class='zinee' onclick="go_zinee()"></div>
+        <h1>To the moon with noopy</h1>
+        <div class="msgbox">
+            안녕하세요! 방문해주셔서 감사합니다:) <br />
+            C/C++/C# <br />
+            Python <br />
+            Matlab <br />
+            Html <br />
+            R <br />
+            조금씩 가지고 놀아보는 중 입니다.... <br />
+            <p class="from"> usuzin@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
